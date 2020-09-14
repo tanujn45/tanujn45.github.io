@@ -1,50 +1,6 @@
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: sans-serif;
-}
-
-.intro {
-  height: 100vh;
-}
-
-.intro video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.intro h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  color: white;
-}
-
-section {
-  height: 100vh;
-  color: black;
-}
-
-section h1 {
-  padding-top: 300px;
-  text-align: center;
-  font-size: 80px;
-}*/
-
-html {
-  height: 100vh;
-}
-
-body {
-  height: 500vh;
   background: #000;
+  height: 400vh;
 }
 
 .sample {
@@ -52,8 +8,13 @@ body {
   position: relative;
   color: white;
   text-transform: capitalize;
+  opacity: 0;
+  transition: all 1s ease-out;
 }
-.sample h1 {
+.sample.fade-in {
+  opacity: 1;
+}
+.sample h4 {
   color: white;
   text-align: center;
 }

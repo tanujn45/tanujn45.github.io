@@ -49,15 +49,16 @@ setInterval(() => {
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
-const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.Scene({
-  duration: 1000,
-  triggerElement: canvas,
-  triggerHook: 0,
+var controller = new ScrollMagic.Controller();
+
+var Scene = new ScrollMagic.Scene({
+  triggerElement: "#sample2 h4",
+  duration: 300,
+  triggerHook: 0.6,
 })
-  .addIndicators()
-  .setPin(canvas)
+  .setClassToggle("#sample2", "fade-in")
+  // .addIndicators()
   .addTo(controller);
 
 const frameCount = 148;
