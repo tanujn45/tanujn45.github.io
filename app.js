@@ -1,4 +1,5 @@
-/*const intro = document.querySelector(".intro");
+/*
+const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const text = intro.querySelector("h1");
 
@@ -44,9 +45,20 @@ setInterval(() => {
   video.currentTime = scrollpos;
 }, 120);
 */
+
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
+const controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.Scene({
+  duration: 1000,
+  triggerElement: canvas,
+  triggerHook: 0,
+})
+  .addIndicators()
+  .setPin(canvas)
+  .addTo(controller);
 
 const frameCount = 148;
 const currentFrame = (index) =>
@@ -63,9 +75,11 @@ const preloadImages = () => {
 
 const img = new Image();
 img.src = currentFrame(1);
-canvas.width = 1158;
-canvas.height = 770;
+// canvas.width = 1158;
+// canvas.height = 770;
 img.onload = function () {
+  canvas.width = img.naturalWidth;
+  canvas.height = img.naturalHeight;
   context.drawImage(img, 0, 0);
 };
 
