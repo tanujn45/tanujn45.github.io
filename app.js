@@ -46,59 +46,66 @@ setInterval(() => {
 }, 120);
 */
 
-const html = document.documentElement;
-const canvas = document.getElementById("hero-lightpass");
-const context = canvas.getContext("2d");
+$("document").ready(function () {
+  var controller = new ScrollMagic.Controller();
 
-var controller = new ScrollMagic.Controller();
+  $(".sample").each(function () {
+    console.log(this.children[1].children[0]);
 
-var Scene = new ScrollMagic.Scene({
-  triggerElement: "#sample2 h4",
-  duration: 300,
-  triggerHook: 0.6,
-})
-  .setClassToggle("#sample2", "fade-in")
-  // .addIndicators()
-  .addTo(controller);
+    var Scene = new ScrollMagic.Scene({
+      triggerElement: this.children[0],
+      duration: 400,
+      triggerHook: 0.8,
+    })
+      .setClassToggle(this, "fade-in")
+      .setPin(this.children[1].children[0])
+      // .addIndicators()
+      .addTo(controller);
+  });
 
-const frameCount = 148;
-const currentFrame = (index) =>
-  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
-    .toString()
-    .padStart(4, "0")}.jpg`;
+  const html = document.documentElement;
+  const canvas = document.getElementById("hero-lightpass");
+  const context = canvas.getContext("2d");
 
-const preloadImages = () => {
-  for (let i = 1; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-  }
-};
+  const frameCount = 148;
+  const currentFrame = (index) =>
+    `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
+      .toString()
+      .padStart(4, "0")}.jpg`;
 
-const img = new Image();
-img.src = currentFrame(1);
-// canvas.width = 1158;
-// canvas.height = 770;
-img.onload = function () {
-  canvas.width = img.naturalWidth;
-  canvas.height = img.naturalHeight;
-  context.drawImage(img, 0, 0);
-};
+  const preloadImages = () => {
+    for (let i = 1; i < frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+    }
+  };
 
-const updateImage = (index) => {
-  img.src = currentFrame(index);
-  context.drawImage(img, 0, 0);
-};
+  const img = new Image();
+  img.src = currentFrame(1);
+  // canvas.width = 1158;
+  // canvas.height = 770;
+  img.onload = function () {
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    context.drawImage(img, 0, 0);
+  };
 
-window.addEventListener("scroll", () => {
-  const scrollTop = html.scrollTop;
-  const maxScrollTop = html.scrollHeight - window.innerHeight;
-  const scrollFraction = scrollTop / maxScrollTop;
-  const frameIndex = Math.min(
-    frameCount - 1,
-    Math.ceil(scrollFraction * frameCount)
-  );
+  const updateImage = (index) => {
+    img.src = currentFrame(index);
+    context.drawImage(img, 0, 0);
+  };
 
-  requestAnimationFrame(() => updateImage(frameIndex + 1));
+  window.addEventListener("scroll", () => {
+    const scrollTop = html.scrollTop;
+    const maxScrollTop = html.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScrollTop;
+    const frameIndex = Math.min(
+      frameCount - 1,
+      Math.ceil(scrollFraction * frameCount)
+    );
+
+    requestAnimationFrame(() => updateImage(frameIndex + 1));
+  });
+
+  preloadImages();
 });
-
-preloadImages();
