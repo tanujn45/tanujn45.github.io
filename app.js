@@ -55,7 +55,7 @@ $("document").ready(function () {
     var Scene = new ScrollMagic.Scene({
       triggerElement: this.children[0],
       duration: 400,
-      triggerHook: 0.8,
+      triggerHook: 0,
     })
       .setClassToggle(this, "fade-in")
       .setPin(this.children[1].children[0])
@@ -67,7 +67,7 @@ $("document").ready(function () {
   const canvas = document.getElementById("hero-lightpass");
   const context = canvas.getContext("2d");
 
-  const frameCount = 148;
+  const frameCount = 147;
   const currentFrame = (index) =>
     `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
       .toString()
