@@ -13,6 +13,15 @@ body {
   height: 300vh;
 }
 
+@keyframes opacityChange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .sample {
   height: 100vh;
   position: relative;
