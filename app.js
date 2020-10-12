@@ -59,7 +59,7 @@ $("document").ready(function () {
     })
       .setClassToggle(this, "fade-in")
       .setPin(this.children[1].children[0])
-      .addIndicators()
+      // .addIndicators()
       .addTo(controller);
   });
 
