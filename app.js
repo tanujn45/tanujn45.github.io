@@ -82,8 +82,8 @@ $("document").ready(function () {
 
   const img = new Image();
   img.src = currentFrame(1);
-  // canvas.width = 1158;
-  // canvas.height = 770;
+  // canvas.width = 1920;
+  // canvas.height = 1080;
   img.onload = function () {
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
