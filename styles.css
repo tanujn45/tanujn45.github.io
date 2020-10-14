@@ -103,6 +103,42 @@ canvas {
   /* border: 5px solid white; */
 }
 
+#form {
+  padding: 60px 0;
+}
+
+#form h1 {
+  font-size: 30px;
+}
+
+#form p {
+  font-size: 18px;
+}
+
+#form .form-box {
+  background-color: white;
+}
+
+#form input {
+  border-radius: 0;
+}
+
+.mybtn {
+  text-transform: uppercase;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 0;
+  border: 2px solid black;
+  transition: ease-in-out 0.3s;
+}
+
+.mybtn:hover {
+  background-color: black;
+  color: white;
+}
+
 footer {
   position: relative;
   background-color: #424242;
