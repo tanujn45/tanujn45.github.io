@@ -69,7 +69,7 @@ $("document").ready(function () {
 
   const frameCount = 480;
   const currentFrame = (index) =>
-    `jpg/${index
+    `jpg2/${index
       .toString()
       .padStart(4, "0")}.jpg`;
 
