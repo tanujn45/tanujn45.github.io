@@ -37,7 +37,7 @@ body {
 
 .sample h4 {
   font-family: "Nivea Regular";
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: normal;
   color: white;
   margin: 0;
@@ -50,12 +50,12 @@ body {
 .sample .para1 p,
 .sample .para2 p,
 .sample .para3 p {
-  background-color: #2e2e2e;
+  /* background-color: #2e2e2e; */
   padding: 20px;
   width: 300px !important;
   margin: 0;
   position: absolute;
-  border-bottom: 5px solid #ffb82b;
+  /* border-bottom: 5px solid #ffb82b; */
 }
 
 .sample .para1 p {
@@ -64,8 +64,9 @@ body {
 }
 
 .accent {
-  color: #ffb82b;
-  font-family: "Nivea Bold";
+  /* color: #ffb82b; */
+  color: white;
+  /* font-family: "Nivea Bold"; */
 }
 
 .sample .para2 p {
