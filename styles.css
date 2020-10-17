@@ -63,9 +63,9 @@ body {
   left: 50px;
 }
 
-.paragraph {
+/* .paragraph {
   font-size: 20px !important;
-}
+} */
 
 .accent {
   /* color: #ffb82b; */
@@ -131,6 +131,55 @@ canvas {
   max-width: 100%;
   height: auto;
    border: 5px solid white; */
+}
+
+.scrollmagic-pin-spacer {
+  vertical-align: top;
+  width: 0 !important;
+}
+
+div.scrollmagic-pin-spacer {
+  overflow: hidden;
+  /* width: 0 !important; */
+}
+
+@media screen and (max-width: 960px) {
+  .sample .para1 p,
+  .sample .para2 p,
+  .sample .para3 p {
+    /* width: 300px !important; */
+    /* margin: 0; */
+    left: 0%;
+    /* bottom: 40px; */
+  }
+
+  canvas {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    max-width: 180vw;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  .sample h4 {
+    font-family: "Nivea Regular";
+    font-size: 1rem;
+    letter-spacing: normal;
+    color: white;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    text-transform: none;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .sample h4 {
+    bottom: 100px;
+  }
 }
 
 #form {
