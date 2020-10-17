@@ -172,7 +172,7 @@ div.scrollmagic-pin-spacer {
     position: absolute;
     text-align: left;
     text-transform: none;
-    top: 600px;
+    top: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
