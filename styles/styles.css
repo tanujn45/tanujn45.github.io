@@ -11,91 +11,75 @@ body {
   background-color: #f9fafa;
 }
 
-nav {
-  background-color: #354493;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 10vh;
-  display: none;
-}
-
-nav .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%;
-  margin: auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-nav .nav-container .logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-nav .nav-container .links {
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-nav .nav-container .links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-nav .nav-container .links ul li {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  margin: 1rem 1rem;
-}
-
-nav .nav-container .links button {
-  outline: none;
-  background-color: white;
-  color: #354493;
-  font-weight: 600;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  margin-left: 2.5rem;
-}
-
 h1 {
   font-size: 32px;
   font-weight: 600;
   line-height: 48px;
   color: #2a2f36;
+}
+
+/* NAVBAR */
+#navbar {
+  background-color: #354493 !important;
+  top: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: top 0.3s, background 0.3s;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "DINPro Bold";
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  height: 95px;
+}
+
+.navbar .nav-item .active {
+  border-bottom: 2px solid white;
+  font-weight: 600 !important;
+}
+
+.navbar .nav-item .nav-link {
+  color: white;
+  padding: 0;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar .nav-item .s-btn {
+  text-transform: none;
+  background-color: white;
+  border: 1px solid white;
+  color: #354493 !important;
+  padding: 5px 14px !important;
+  letter-spacing: normal;
+  font-weight: 600;
+  border-radius: 40px;
+  transition: all 0.2s linear;
+}
+
+.navbar .nav-item .s-btn:hover {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white !important;
+}
+
+.navbar .nav-item .nav-link {
+  color: white;
+  padding: 0;
+  font-size: 0.75rem;
 }
 
 .landing {
@@ -113,7 +97,6 @@ h1 {
   height: 90vh;
   width: 100%;
   color: white;
-  display: none;
 }
 
 .landing .background-container {
@@ -299,7 +282,7 @@ h1 {
   flex-direction: column;
   height: 400px;
   /* background-color: white; */
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 #choose .s-card img {
