@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   /* padding: 0; */
@@ -82,68 +83,29 @@ h1 {
   font-size: 0.75rem;
 }
 
-.landing {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 90vh;
-  width: 100%;
-  color: white;
-}
-
-.landing .background-container {
-  position: absolute;
+/* HERO */
+#hero {
   height: 70vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.landing .background-container img.background {
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-}
-
-.landing .background-container .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: #354493;
-  opacity: 0.92;
-}
-
-.landing .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin-bottom: 70px;
+  background: linear-gradient(
+      to right,
+      rgba(53, 68, 147, 0.95),
+      rgba(53, 68, 147, 0.95)
+    ),
+    url("../img/pexels-johnny-mckane-237836\ 1.png") center / cover no-repeat;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 400px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  flex-direction: row;
   align-items: center;
-  margin-top: 100px;
-  z-index: 2;
+  text-align: center;
 }
 
-.landing .heading h1 {
+#hero h1 {
   font-size: 48px;
   font-weight: 400;
   color: white;
 }
 
-.landing .heading p {
+#hero p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 300;
@@ -151,33 +113,21 @@ h1 {
   text-align: center;
 }
 
-.landing .heading button {
+#hero button {
   background: none;
   border: 1px rgba(255, 255, 255, 0.5) solid;
   padding: 0.5rem 2rem;
   color: white;
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.75rem;
   outline: none;
 }
 
-.landing img {
+#hero img {
   position: absolute;
   z-index: 2;
-}
-
-.landing img.screen {
-  top: 48%;
-  -webkit-transform: scaleY(0.8);
-  transform: scaleY(0.8);
-}
-
-.landing img.dashboard {
-  -webkit-transform: scale(0.76, 0.725);
-  transform: scale(0.76, 0.725);
-  top: 52.5%;
 }
 
 .description-container {
