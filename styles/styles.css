@@ -304,135 +304,96 @@ h1 {
   margin-bottom: 100px;
 }
 
-.plans-container {
-  margin: auto;
-  margin-top: 50px;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* PLANS */
+#plans {
+  padding: 80px 0;
+}
+
+#plans h1 {
+  text-align: center;
+}
+
+#plans p {
+  text-align: center;
+}
+
+#plans .plan {
+  height: 600px;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: none;
-}
-
-.plans-container .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.plans-container .cards .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 50px 30px;
+  text-align: center;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 300px;
-  height: 500px;
-  padding: 70px 20px;
-  margin: 10px 50px;
-  color: white;
 }
 
-.plans-container .cards .card img.graphic {
-  position: absolute;
-}
-
-.plans-container .cards .card.basic {
+#plans .plan-1 {
   background-color: #354493;
 }
 
-.plans-container .cards .card.basic img.graphic {
-  bottom: -70px;
-  left: -70px;
-}
-
-.plans-container .cards .card.premium {
+#plans .plan-2 {
   background-color: #2a2f36;
 }
 
-.plans-container .cards .card.premium img.graphic {
-  top: -70px;
-  right: -70px;
-}
-
-.plans-container .cards .card h3 {
-  font-weight: 400;
-}
-
-.plans-container .cards .card ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 70px;
-  margin-left: 20px;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  list-style-type: none;
-}
-
-.plans-container .cards .card ul li {
-  font-weight: 200;
-  font-size: 0.8rem;
-}
-
-.plans-container .cards .card ul li img {
-  margin-right: 10px;
-}
-
-.plans-container .cards .card p {
-  font-size: 0.7rem;
-  font-weight: 200;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.plans-container .cards .card button {
-  position: absolute;
-  bottom: 30px;
-  background: none;
-  max-width: 200px;
-  border: 2px white solid;
-  padding: 0.5rem 2rem;
+#plans .plan h3 {
   color: white;
-  margin-top: 70px;
-  outline: none;
 }
 
-.plans-container .cards .image {
-  width: 500px;
-  height: 400px;
-  background-color: grey;
+#plans .plan ul {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 28px;
+  list-style-image: url("../img/Vector\ 1.png");
+  font-size: 17px;
+  font-weight: 300;
+}
+
+#plans .plan p {
+  text-align: left;
+  color: white;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+#plans button {
+  cursor: pointer;
+  padding: 13px 28px;
+  background-color: #7b8ed5;
+  border: 2px solid #7b8ed5;
+  border-radius: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.1s linear;
+}
+
+#plans button:hover {
+  border: 2px solid #7b8ed5;
+  background-color: rgba(0, 0, 0, 0);
+  color: #7b8ed5;
+}
+
+#plans .icon-1 {
+  position: absolute;
+  left: -75px;
+  bottom: -75px;
+}
+
+#plans .icon-1 img {
+  width: 150px;
+}
+
+#plans .icon-2 {
+  position: absolute;
+  right: -75px;
+  top: -75px;
+}
+
+#plans .icon-2 img {
+  width: 150px;
 }
 
 .clients-container {
