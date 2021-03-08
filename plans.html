@@ -13,9 +13,38 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark better-bootstrap-nav-right">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" class="img-fluid"></a>
+            <button class="navbar-toggler custom-toggler toggler-white" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="plans.html">Plans</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
 
     <!-- START -->
-    <section id="plans-start">
+    <section id="plans-start" class="navbar-margin">
         <div class="container">
             <h1>Our <span class="pri">plans</span></h1>
         </div>
@@ -27,10 +56,10 @@
     <section id="plans">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6">
+                <div class="col-md-6 order-md-2 order-1">
                     <img src="./images/designs/dinner.svg" alt="" class="img-fluid">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 order-md-1 order-2">
                     <div class="mx-1">
                         <h2 class="mt-4">21 Days</h2>
                         <h3 class="pri">Breakfast Challenge
@@ -57,7 +86,7 @@
                 </div>
             </div>
             <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6">
+                <div class="col-md-6 order-2">
                     <div class="mx-1">
                         <h2 class="mt-4">90 Days</h2>
                         <h3 class="pri">Body transformation program</h3>
@@ -73,7 +102,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 order-1">
                     <img src="./images/designs/dinner.svg" alt="" class="img-fluid">
                 </div>
             </div>
@@ -133,6 +162,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
     <script src="./js/main.js"></script>
 
     <!-- <script>

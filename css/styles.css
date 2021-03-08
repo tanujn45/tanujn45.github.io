@@ -6,6 +6,7 @@
 @import url("../fonts/brandon-grotesque/brandon-grotestque.css");
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url("./bootstrap-better-nav.css");
 
 :root {
   --font: "Sen", sans-serif;
@@ -134,6 +135,10 @@ label:focus,
   z-index: 200;
 }
 
+.custom-toggler.toggler-white .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1, 1, 1, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -146,9 +151,12 @@ label:focus,
   border-color: rgba(0, 0, 0, 0);
 }
 
+.navbar-margin {
+  margin-top: -85px;
+}
+
 /* HERO */
 #hero {
-  margin-top: -85px;
   min-height: 100vh;
   padding: 100px 0;
   display: flex;
@@ -287,6 +295,16 @@ label:focus,
   color: #a4dbdd;
 }
 
+#testimonials .testimonial-box .line {
+  width: auto !important;
+}
+
+@media screen and (max-width: 425px) {
+  #testimonials .testimonial-box {
+    padding: 3rem 2rem;
+  }
+}
+
 /* ROUTINE */
 #routine {
   padding: 100px 0;
@@ -342,7 +360,6 @@ ABOUT PAGE
 ---------------------- */
 
 #about-start {
-  margin-top: -85px;
   padding: 170px 0 100px;
   background: var(--bg);
 }
@@ -390,4 +407,37 @@ PLANS PAGE
 
 #plans .row {
   margin-bottom: 100px;
+}
+
+/* ----------------------
+REGISTER PAGE
+---------------------- */
+
+#register-start {
+  padding: 170px 0 100px;
+  background: var(--bg);
+}
+
+#register-start h1 {
+  text-align: center;
+  font-size: 9rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-start h1,
+  #plans-start h1,
+  #register-start h1 {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about-start h1,
+  #plans-start h1,
+  #register-start h1 {
+    font-size: 5rem;
+  }
 }
